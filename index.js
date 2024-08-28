@@ -19,7 +19,7 @@ document.querySelector('#submitWorkout').addEventListener('click', displayWorkou
 // NOW LET'S DEBUG TO PREVENT DUPLICATE GOALS FROM BEING SUBMITTED 🚀
 
 const addNewGoal = () => {
-    const goalInput = document.querySelector('#goalInput').value.trim();
+    const goalInput = document.querySelector('#goalInput').value.trim(); /* trim gets rid of whitespace prevents user from inputing the same goal twice */
     const goalList = document.querySelectorAll('#goalList li');
 
      /* Checking if the goal already exists in the list */
